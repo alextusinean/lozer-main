@@ -1,0 +1,35 @@
+import { Box, TextField } from '@mui/material';
+import { Edit } from '@refinedev/mui';
+import { useForm } from '@refinedev/react-hook-form';
+
+export const SalesEdit = () => {
+  const {
+    saveButtonProps,
+    register,
+    formState: { errors },
+  } = useForm({});
+
+  return (
+    <Edit saveButtonProps={saveButtonProps}>
+      <Box
+        component='form'
+        sx={{ display: 'flex', flexDirection: 'column' }}
+        autoComplete='off'
+      >
+        <TextField
+          {...register('title', {
+            required: 'This field is required',
+          })}
+          error={!!errors?.title}
+          helperText={errors?.title?.message as React.ReactNode}
+          margin='normal'
+          fullWidth
+          InputLabelProps={{ shrink: true }}
+          type='text'
+          label={'Title'}
+          name='title'
+        />
+      </Box>
+    </Edit>
+  );
+};
