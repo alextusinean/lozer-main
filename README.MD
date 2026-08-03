@@ -1,5 +1,3 @@
-# lozer
-
 designed for "accounting" important item(s) (scratchers; but can be used for anything)
 
 
@@ -13,6 +11,12 @@ inputs - when a user returns the items that weren't sold
 
 then, based on the day's sales (e.g. csv file - tells who sold what and how many), reports can be created - which highlight overages/shortages
 
+![](screenshots/lozer.png)
+![](screenshots/lozerscratchers.png)
+![](screenshots/lozersales.png)
+![](screenshots/lozerreport.png)
+
+# lozer
 
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
