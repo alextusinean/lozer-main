@@ -2,9 +2,13 @@
 
 designed for "accounting" important item(s) (scratchers; but can be used for anything)
 
+
 it's simple yet powerful for tracking (keeps stocks too)
+
 each transaction (move) can be either an output or input
+
 outputs - when a user receives items for the purpose of selling
+
 inputs - when a user returns the items that weren't sold
 
 then, based on the day's sales (e.g. csv file - tells who sold what and how many), reports can be created - which highlight overages/shortages
